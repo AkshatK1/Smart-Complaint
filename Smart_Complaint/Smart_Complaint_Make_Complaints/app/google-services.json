@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1034576395218",
+    "firebase_url": "https://smart-complaint-32b61.firebaseio.com",
+    "project_id": "smart-complaint-32b61",
+    "storage_bucket": "smart-complaint-32b61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034576395218:android:00e6fe6a6dc6494ef5e60b",
+        "android_client_info": {
+          "package_name": "com.example.smartcomplaint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034576395218-a5t7ettm7lls5eabqc08em4v0g37eoet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfnxOc_hCRvt-iSBct6mVksTjBv0u91og"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034576395218-a5t7ettm7lls5eabqc08em4v0g37eoet.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

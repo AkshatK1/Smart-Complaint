@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDBDBD"
+    android:orientation="vertical"
+    android:padding="10sp"
+    tools:context=".main_page">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:id="@+id/file_complaint_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/showimage" />
+
+        <ImageButton
+            android:id="@+id/view_complaint_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/file_complaint_button"
+            android:layout_toRightOf="@id/file_complaint_button"
+            android:scaleType="centerCrop"
+            android:src="@drawable/viewcomplaint" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

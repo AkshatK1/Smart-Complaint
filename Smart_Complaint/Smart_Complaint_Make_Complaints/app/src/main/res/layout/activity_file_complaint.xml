@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDBDBD"
+    android:orientation="vertical"
+    android:padding="10sp"
+    tools:context=".file_complaint">
+
+    <EditText
+        android:id="@+id/enter_issue_topic"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/enter_complain_title"
+        android:hint="@string/enter_title_of_complaint"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/select_receiver_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_issue_topic"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/select_receiver_of_your_complaint"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:id="@+id/select_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_receiver_label" />
+
+    <EditText
+        android:id="@+id/enter_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_receiver"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/enter_complain_title"
+        android:hint="@string/enter_your_complaint_here"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <RelativeLayout
+        android:id="@+id/complaintButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_complaint"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:id="@+id/photoPickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/enter_complain_title"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_add_a_photo_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/add_images"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#448AFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/postComplainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/photoPickerButton"
+            android:layout_toRightOf="@id/photoPickerButton"
+            android:background="@drawable/blue_curve_rectangle"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_send_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/PostComplaint"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/asli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/complaintButtons"
+        android:adjustViewBounds="true"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/nakli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

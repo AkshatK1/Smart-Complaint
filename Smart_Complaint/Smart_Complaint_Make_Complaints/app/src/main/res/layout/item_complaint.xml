@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:background="@drawable/enter_complain_title"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/receiver_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#448AFF"
+        tools:text="Receiver" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:text="Description" />
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#F50057"
+        tools:text="Name" />
+
+</LinearLayout>
